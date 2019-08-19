@@ -50,8 +50,8 @@ $(document).on("ready", function () {
 });
 
 $(document).on("ready", function () {
-	$(".сard_product .color-block span").click(function () {
-		$(".сard_product .color-block span").removeClass('active');
+	$(".color-block .color").click(function () {
+		$(".color-block .color").removeClass('active');
 		$(this).addClass('active');
 	});
 });
@@ -62,12 +62,7 @@ $(document).on("ready", function () {
 	});
 });
 
-$(document).on("ready", function () {
-	$("#product_one-specification .param .color span").click(function () {
-		$("#product_one-specification .param .color span").removeClass('active');
-		$(this).addClass('active');
-	});
-});
+
 
 $(document).on("ready", function () {
 	$(".сard_product .like").click(function () {

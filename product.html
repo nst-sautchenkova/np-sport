@@ -38,20 +38,30 @@
                         <div class="container">
                             <div class="top row">
                                 <div class="logo"><a href="#"><img src="img/logo.png" alt="NP sport" /><span>Детская спортивная одежда <br/>от производителя</span></a></div>
-                                <div class="language">
-                                    <div class="select">
-                                        <div class="select-block">
-                                            <div class="select_header">
-                                                <span>Ru</span>
-                                                <div class="img-arrow"><img src="img/ico/arrow.png" alt=""/></div>
-                                            </div>
-                                            <ul class="select_body">
-                                                <li>En</li>
-                                                <li>Ru</li>
+                                               
+                                <div class="language-block">
+                                    <form action="" method="post" id="form-language">
+                                        <div class="btn-group">
+                                            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="hidden-xs hidden-sm hidden-md">RU</span>
+                                                <div class="img-arrow"><img src="img/ico/arrow.png" alt="" /></div>
+                                            </button>
+                                
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <button class="btn btn-link btn-block language-select" type="button" name="RU">RU</button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-link btn-block language-select" type="button" name="EN">EN</button>
+                                                </li>
+                                
                                             </ul>
-                                        </div><!--select-block-->
-                                    </div>
-                                </div>
+                                        </div>
+                                        <input type="hidden" name="code" value="" />
+                                        <input type="hidden" name="redirect" value="" />
+                                    </form>
+                                </div><!-- language -->
+ 
+                                
                                 <div class="info">
                                     <div class="select-block">
                                         <div class="select_header">
@@ -152,11 +162,11 @@
                                     
                                 </div><!-- End navigation menu -->
                                 
-                                <div class="search">
-                                    <form class="">
-                                        <input type="text" placeholder="Что будем искать?" class="form-control">
-                                        <img src="img/ico/search.png" alt=""/>
-                                    </form>
+                                <div id="search" class="form-group search">
+                                    <div class="input-group">
+                                        <input type="search" name="search" placeholder="Что будем искать?" value="" class="form-control">
+                                        <button type="button"><img src="img/ico/search.png" alt=""/></button>
+                                    </div>
                                 </div>
                                 
                                 <div class="ico-block">
@@ -279,12 +289,14 @@
                                     	</div>
                                         <div class="param">
                                             <div class="tit">Цвет:</div>
-                                            <ul class="color">
-                                            	<li><span class="color-1" style="background:#C60"></span></li>
-                                                <li><span class="color-2" style="background:#0F9"></span></li>
-                                                <li><span class="color-3" style="background:#F0C"></span></li>
-                                                <li><span class="color-4 active" style="background:#ff3600"></span></li>
-                                            </ul>
+                                            	<div class="color-block">
+                                                    <ul>
+                                                        <li class="color"><input type="button" style="background:#093"/></li>
+                                                        <li class="color"><input type="button" style="background:#369" /></li>
+                                                        <li class="color"><input type="button" style="background:#F66"/></li>
+                                                        <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                    </ul>
+                                                </div>
                                     	</div>
                                     </div><!--param-block-->
                                     <div class="buy-block">
@@ -301,9 +313,7 @@
                                             <span class="plus">+</span>
                                         </div>
                                         <div class="btn-block">
-                                            <a href="#" class="btn buy-btn">
-                                                <span>В корзину</span>
-                                            </a>
+                                            <button type="button" class="btn buy-btn btn-addtocart"><span>В корзину</span></button>
                                         </div>
                                     </div><!--buy-block-->
                                     <div class="quick-block">
@@ -528,18 +538,18 @@
                                         <figcaption>
                                             <div class="row">
                                                 <div class="color-block">
-                                                    <ul>
-                                                        <li class="tit">Цвет:</li>
-<li><span class="color-1"></span></li>
-                                                        <li><span class="color-2"></span></li>
-                                                        <li><span class="color-3"></span></li>
-                                                        <li><span class="color-4 active"></span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ico-block">
-                                                    <div class="like"></div>
-                                                    <div class="compare"><div class="ico"></div></div>
-                                                </div>
+                                                        <ul>
+                                                            <li class="tit">Цвет:</li>
+                                                            <li class="color"><input type="button" style="background:#093"/></li>
+                                                            <li class="color"><input type="button" style="background:#369" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66"/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ico-block">
+                                                        <button type="button" class="wishlist like"></button>
+                                                        <div class="compare"><button type="button" class="ico"></button></div>
+                                                    </div>
                                             </div> <!-- .row -->
                                             <div class="tit"><a href="#">Футболка Asics ESNT DIAGONAL SS TOP</a></div>
                                             <div class="row">
@@ -580,18 +590,18 @@
                                         <figcaption>
                                             <div class="row">
                                                 <div class="color-block">
-                                                    <ul>
-                                                        <li class="tit">Цвет:</li>
-<li><span class="color-1"></span></li>
-                                                        <li><span class="color-2"></span></li>
-                                                        <li><span class="color-3"></span></li>
-                                                        <li><span class="color-4 active"></span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ico-block">
-                                                    <div class="like"></div>
-                                                    <div class="compare"><div class="ico"></div></div>
-                                                </div>
+                                                        <ul>
+                                                            <li class="tit">Цвет:</li>
+                                                            <li class="color"><input type="button" style="background:#093"/></li>
+                                                            <li class="color"><input type="button" style="background:#369" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66"/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ico-block">
+                                                        <button type="button" class="wishlist like"></button>
+                                                        <div class="compare"><button type="button" class="ico"></button></div>
+                                                    </div>
                                             </div> <!-- .row -->
                                             <div class="tit"><a href="#">Футболка Asics ESNT DIAGONAL SS TOP</a></div>
                                             <div class="row">
@@ -632,18 +642,18 @@
                                         <figcaption>
                                             <div class="row">
                                                 <div class="color-block">
-                                                    <ul>
-                                                        <li class="tit">Цвет:</li>
-<li><span class="color-1"></span></li>
-                                                        <li><span class="color-2"></span></li>
-                                                        <li><span class="color-3"></span></li>
-                                                        <li><span class="color-4 active"></span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ico-block">
-                                                    <div class="like"></div>
-                                                    <div class="compare"><div class="ico"></div></div>
-                                                </div>
+                                                        <ul>
+                                                            <li class="tit">Цвет:</li>
+                                                            <li class="color"><input type="button" style="background:#093"/></li>
+                                                            <li class="color"><input type="button" style="background:#369" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66"/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ico-block">
+                                                        <button type="button" class="wishlist like"></button>
+                                                        <div class="compare"><button type="button" class="ico"></button></div>
+                                                    </div>
                                             </div> <!-- .row -->
                                             <div class="tit"><a href="#">Футболка Asics ESNT DIAGONAL SS TOP</a></div>
                                             <div class="row">
@@ -683,18 +693,18 @@
                                         <figcaption>
                                             <div class="row">
                                                 <div class="color-block">
-                                                    <ul>
-                                                        <li class="tit">Цвет:</li>
-<li><span class="color-1"></span></li>
-                                                        <li><span class="color-2"></span></li>
-                                                        <li><span class="color-3"></span></li>
-                                                        <li><span class="color-4 active"></span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ico-block">
-                                                    <div class="like"></div>
-                                                    <div class="compare"><div class="ico"></div></div>
-                                                </div>
+                                                        <ul>
+                                                            <li class="tit">Цвет:</li>
+                                                            <li class="color"><input type="button" style="background:#093"/></li>
+                                                            <li class="color"><input type="button" style="background:#369" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66"/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ico-block">
+                                                        <button type="button" class="wishlist like"></button>
+                                                        <div class="compare"><button type="button" class="ico"></button></div>
+                                                    </div>
                                             </div> <!-- .row -->
                                             <div class="tit"><a href="#">Футболка Asics ESNT DIAGONAL SS TOP</a></div>
                                             <div class="row">
@@ -734,18 +744,18 @@
                                         <figcaption>
                                             <div class="row">
                                                 <div class="color-block">
-                                                    <ul>
-                                                        <li class="tit">Цвет:</li>
-<li><span class="color-1"></span></li>
-                                                        <li><span class="color-2"></span></li>
-                                                        <li><span class="color-3"></span></li>
-                                                        <li><span class="color-4 active"></span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ico-block">
-                                                    <div class="like"></div>
-                                                    <div class="compare"><div class="ico"></div></div>
-                                                </div>
+                                                        <ul>
+                                                            <li class="tit">Цвет:</li>
+                                                            <li class="color"><input type="button" style="background:#093"/></li>
+                                                            <li class="color"><input type="button" style="background:#369" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66"/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ico-block">
+                                                        <button type="button" class="wishlist like"></button>
+                                                        <div class="compare"><button type="button" class="ico"></button></div>
+                                                    </div>
                                             </div> <!-- .row -->
                                             <div class="tit"><a href="#">Футболка Asics ESNT DIAGONAL SS TOP</a></div>
                                             <div class="row">
@@ -785,18 +795,18 @@
                                         <figcaption>
                                             <div class="row">
                                                 <div class="color-block">
-                                                    <ul>
-                                                        <li class="tit">Цвет:</li>
-<li><span class="color-1"></span></li>
-                                                        <li><span class="color-2"></span></li>
-                                                        <li><span class="color-3"></span></li>
-                                                        <li><span class="color-4 active"></span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ico-block">
-                                                    <div class="like"></div>
-                                                    <div class="compare"><div class="ico"></div></div>
-                                                </div>
+                                                        <ul>
+                                                            <li class="tit">Цвет:</li>
+                                                            <li class="color"><input type="button" style="background:#093"/></li>
+                                                            <li class="color"><input type="button" style="background:#369" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66"/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ico-block">
+                                                        <button type="button" class="wishlist like"></button>
+                                                        <div class="compare"><button type="button" class="ico"></button></div>
+                                                    </div>
                                             </div> <!-- .row -->
                                             <div class="tit"><a href="#">Футболка Asics ESNT DIAGONAL SS TOP</a></div>
                                             <div class="row">
@@ -836,18 +846,18 @@
                                         <figcaption>
                                             <div class="row">
                                                 <div class="color-block">
-                                                    <ul>
-                                                        <li class="tit">Цвет:</li>
-<li><span class="color-1"></span></li>
-                                                        <li><span class="color-2"></span></li>
-                                                        <li><span class="color-3"></span></li>
-                                                        <li><span class="color-4 active"></span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ico-block">
-                                                    <div class="like"></div>
-                                                    <div class="compare"><div class="ico"></div></div>
-                                                </div>
+                                                        <ul>
+                                                            <li class="tit">Цвет:</li>
+                                                            <li class="color"><input type="button" style="background:#093"/></li>
+                                                            <li class="color"><input type="button" style="background:#369" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66"/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ico-block">
+                                                        <button type="button" class="wishlist like"></button>
+                                                        <div class="compare"><button type="button" class="ico"></button></div>
+                                                    </div>
                                             </div> <!-- .row -->
                                             <div class="tit"><a href="#">Футболка Asics ESNT DIAGONAL SS TOP</a></div>
                                             <div class="row">
@@ -1057,7 +1067,7 @@
                                     <div class="add"><span></span>Добавить комментарий</div>
                                     <textarea placeholder="Ваш комментарий" class="form-control"></textarea>
                                 </div>
-                                <button class="btn btn-order">Заказать</button>
+                                <button type="button" class="btn btn-order btn-addtocart">Заказать</button>
                             </form>
                         </div><!-- info -->
                     </div><!--flex-->
@@ -1095,5 +1105,6 @@
 		</script>
        
 	   <script type="text/javascript" src="js/main.js"></script>  
+       <script type="text/javascript" src="js/common.js"></script>  
 	</body>
 </html>

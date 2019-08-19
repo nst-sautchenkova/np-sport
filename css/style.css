@@ -853,7 +853,6 @@ header .bottom .row {
 
 .search input {
     background: #fff;
-    border-radius: 60px;
     padding-top: 40px;
     width: 100%;
     height: 100%;
@@ -871,8 +870,6 @@ header .bottom .row {
 }
 
 .search img {
-    position: absolute;
-    right: 17px;
 }
 
 header .bottom .ico-block {
@@ -1415,15 +1412,15 @@ header .bottom .ico-block a:hover {
     opacity: 1 !important;
 }
 
-.сard_product .color-block span:hover {
+.color-block .color:hover {
     opacity: 0.5
 }
 
-.сard_product .color-block span.active:before {
+.color-block .active:before {
     content: '';
     display: block;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
     position: absolute;
     border: 1px solid #b3ce96;
     border-radius: 4px;
@@ -1454,14 +1451,20 @@ header .bottom .ico-block a:hover {
 
 .сard_product .like {
     background: url(../img/ico/like2.png) no-repeat;
-    width: 18px;
+    width: 19px;
     height: 16px;
     cursor: pointer;
+    border: 0;
+    background-size: contain;
+    transition: none;
 }
 
 .сard_product .like:hover,
 .сard_product .like.active {
     background: url(../img/ico/like-active.png) no-repeat;
+    width: 19px;
+    height: 16px;
+    background-size: contain;
 }
 
 .сard_product .compare {
@@ -1479,6 +1482,7 @@ header .bottom .ico-block a:hover {
     width: 18px;
     height: 18px;
     position: relative;
+    border: 0;
 }
 
 .сard_product .compare.active .ico,
@@ -1658,6 +1662,12 @@ header .bottom .ico-block a:hover {
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
+
+
+
+
+
+
 
 .сard_product:hover {
     transform: scale(1.05);
@@ -1866,6 +1876,7 @@ footer .row.top-row {
 }
 
 footer .l-block {
+
     display: flex;
 }
 
@@ -2102,6 +2113,8 @@ footer .bottom-row .r-block a {
 }
 
 #bread-crumbs {
+
+
     margin-top: 5px;
     padding: 15px 0;
     border-bottom: 1px solid #f1f1f1;
@@ -2333,6 +2346,8 @@ footer .bottom-row .r-block a {
     cursor: pointer;
 }
 
+
+
 .checkbox input {
     margin-right: 10px;
 }
@@ -2340,7 +2355,7 @@ footer .bottom-row .r-block a {
 .checkbox label {
     font-size: 12px;
     width: auto;
-
+	padding-left:0;
     height: 25px;
 }
 
@@ -2658,6 +2673,7 @@ input[type="radio"]:checked + label .check-block svg {
     display: block;
     position: relative;
     z-index: 9;
+	box-shadow:none;
 }
 
 .modal-content {
@@ -2919,6 +2935,7 @@ input[type="radio"]:checked + label .check-block svg {
     font-size: 13px;
     color: #333333;
     font-family: "GothamPro";
+    padding: 10px 15px;
 }
 
 .modal-quick textarea {
@@ -2969,6 +2986,7 @@ input[type="radio"]:checked + label .check-block svg {
     font-size: 14px;
     color: #7b7b7b;
     font-family: "GothamPro";
+
 }
 
 .modal-quick .add-comment .add.active:before {
@@ -3827,6 +3845,8 @@ textarea:focus:-ms-input-placeholder {
     font-size: 12px;
     color: #666666;
     margin-top: 5px;
+
+
     margin-left: 25px;
 }
 
@@ -4023,6 +4043,7 @@ form .form-control {
     width: calc(100% - 120px) !important;
 }
 
+
 form .form-control {
     border: 0;
     border-top: 1px solid #b2b2b2;
@@ -4031,6 +4052,7 @@ form .form-control {
     border-radius: 5px;
     width: 100%;
     padding: 0 20px;
+
     font-size: 13px;
     color: #999999;
     font-family: "GothamPro";
@@ -4870,6 +4892,7 @@ form .select-block .select_header span {
     margin-right: 15px;
     font-family: "GothamProMedium";
     font-size: 11px;
+
 }
 
 #product-reviews .reviews-block .txt-ov .bottom .like-block {
@@ -5080,6 +5103,7 @@ form .select-block .select_header span {
 
 #product-one {
     padding: 40px 0 45px;
+
 }
 
 #product-one .row {
@@ -5089,6 +5113,7 @@ form .select-block .select_header span {
 
 #product-one .bg {
     background: url(../img/prod-bg.png) no-repeat;
+
     position: absolute;
     width: 1221px;
     height: 530px;
@@ -5694,8 +5719,11 @@ form .select-block .select_header span {
     font-size: 18px;
     margin-top: 4px;
 }
-
+.row:before, .row:after{
+	display:none;
+}
 @media (max-width: 1750px) {
+
     .container-1700 {
         width: 1440px;
     }
@@ -5774,12 +5802,13 @@ form .select-block .select_header span {
     .swiper-slide .сard_product {
         width: 90%
     }
-    header .language {
+    header .language-block {
         display: none;
     }
     header .info {
         display: none;
     }
+	
     .cd-nav-trigger {
         display: block;
     }
@@ -6551,12 +6580,14 @@ form .select-block .select_header span {
     #product_one-specification .kol {
         margin-left: 0;
         width: 100%;
+
     }
     #product_one-specification .quick-block {
         margin-top: 20px;
     }
     #product_one-specification .quick-block form {
         flex-wrap: wrap;
+
     }
     #product_one-specification .quick-block input {
         width: 100% !important;
@@ -6962,4 +6993,118 @@ form .select-block .select_header span {
     h5 {
         font-size: 14px;
     }
+}
+.form-group{
+	margin-bottom:0;
+}
+#search .input-group{
+	height:100%;
+	width: 100%;
+}
+#search .input-group input{
+    border-radius: 5px;
+    z-index: 1;
+}
+#search button{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	padding-right: 17px;
+	border: 0;
+	background: transparent;
+	z-index: 2;
+}
+.form-control{
+	font-weight:100;
+	
+}
+input{
+	font-family: "GothamPro";
+    color: #333333;
+    font-size: 13px;
+}
+input:focus, input:active{
+    outline:none !important;
+    box-shadow:none !important
+}
+.form-control:focus{
+	box-shadow:none !important
+}
+.color-block .color{
+	width: 18px;
+	height: 13px;
+	display: block;
+	margin-left: 10px;
+	border-radius: 3px;
+	box-shadow: inset 1px 1px 1px rgba(146, 146, 146, 0.7);
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	border: 0;
+	position: relative;
+}
+.color-block .color:hover{
+    opacity:0.7
+}
+.color-block .color input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 1px rgba(146, 146, 146, 0.7);
+}
+.color-block .active{
+	opacity:1;
+}
+
+#form-language .btn {
+    height: auto;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #333333;
+    font-family: "GothamProMedium";
+    position: relative;
+    line-height: 12px;
+    background: transparent;
+    border-bottom: 2px solid #669933;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0 5px 5px;
+    text-decoration: none;
+}
+#form-language .img-arrow{
+    position: relative;
+    top: 0px;
+    height: 100%;
+    width: 5px;
+    margin-left: 5px;
+    filter: invert(100%);
+    display: flex;
+    align-items: center;
+}
+#form-language .btn-link{
+    padding: 10px;
+} 
+#form-language .dropdown-menu{
+    padding: 0;
+    min-width: auto;
+}
+#form-language .dropdown-menu li{
+    border-bottom:1px solid #ddd
+}
+#form-language .dropdown-menu li:last-child{
+    border-bottom:0;
+}
+#form-language .dropdown-menu .btn{
+    border:0;
+}
+#product_one-specification .param .color-block .color{
+	margin-left:0;
+	margin-right:10px;
 }

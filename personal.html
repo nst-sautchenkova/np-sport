@@ -35,20 +35,30 @@
                         <div class="container">
                             <div class="top row">
                                 <div class="logo"><a href="#"><img src="img/logo.png" alt="NP sport" /><span>Детская спортивная одежда <br/>от производителя</span></a></div>
-                                <div class="language">
-                                    <div class="select">
-                                        <div class="select-block">
-                                            <div class="select_header">
-                                                <span>Ru</span>
-                                                <div class="img-arrow"><img src="img/ico/arrow.png" alt=""/></div>
-                                            </div>
-                                            <ul class="select_body">
-                                                <li>En</li>
-                                                <li>Ru</li>
+                                               
+                                <div class="language-block">
+                                    <form action="" method="post" id="form-language">
+                                        <div class="btn-group">
+                                            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="hidden-xs hidden-sm hidden-md">RU</span>
+                                                <div class="img-arrow"><img src="img/ico/arrow.png" alt="" /></div>
+                                            </button>
+                                
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <button class="btn btn-link btn-block language-select" type="button" name="RU">RU</button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-link btn-block language-select" type="button" name="EN">EN</button>
+                                                </li>
+                                
                                             </ul>
-                                        </div><!--select-block-->
-                                    </div>
-                                </div>
+                                        </div>
+                                        <input type="hidden" name="code" value="" />
+                                        <input type="hidden" name="redirect" value="" />
+                                    </form>
+                                </div><!-- language -->
+                                
+                                
                                 <div class="info">
                                     <div class="select-block">
                                         <div class="select_header">
@@ -74,9 +84,17 @@
                     </div>
                     
                     <div class="bottom green-bg">
+                        
                         <div class="container">
                             <div class="row">
                                 <div id="navigation">
+                                    <div class="cd-nav-trigger">
+                                        <div class="hamburger-menu">
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                        </div>
+                                    </div>
                                     <ul class="navigation-menu">
                                         <li class="has-submenu">
                                             <a href="#">Девочкам <img src="img/ico/arrow.png" alt=""/></a>
@@ -132,14 +150,20 @@
                                                 <li><a href="#">Термобелье</a></li>
                                             </ul>
                                         </li>
+                                        <li class="c-nav">
+                                            <div class="contacts">
+                                                <div class="btn">Обратный звонок</div>
+                                             </div>
+                                        </li>
                                     </ul>
+                                    
                                 </div><!-- End navigation menu -->
                                 
-                                <div class="search">
-                                    <form class="">
-                                        <input type="text" placeholder="Что будем искать?" class="form-control">
-                                        <img src="img/ico/search.png" alt=""/>
-                                    </form>
+                                <div id="search" class="form-group search">
+                                    <div class="input-group">
+                                        <input type="search" name="search" placeholder="Что будем искать?" value="" class="form-control">
+                                        <button type="button"><img src="img/ico/search.png" alt=""/></button>
+                                    </div>
                                 </div>
                                 
                                 <div class="ico-block">
@@ -357,5 +381,6 @@
               showMaskOnHover: false
             }).mask(inputsTel);
         </script>  
+        <script type="text/javascript" src="js/common.js"></script>  
 	</body>
 </html>
