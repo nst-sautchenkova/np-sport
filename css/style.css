@@ -5772,13 +5772,8 @@ form .select-block .select_header span {
 	display:none;
 }
 @media (max-width: 1140px) {
-	.open-menu #main{
-	position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;overflow: hidden;
-	}
-	.navigation-menu{background:#000; }
+.open-menu #main{position: fixed;top: 0;left: 0;width: 100%;overflow: hidden;}
+
     .green-bg {
         background: url(../img/green-bg.png) no-repeat center top;
         background-size: cover;
