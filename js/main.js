@@ -86,6 +86,12 @@ $("#catalog_filter .f-header").click(function () {
 	$(this).toggleClass('active');
 	$("#catalog_filter .f-body").slideToggle('normal');
 });
+
+$(document).on("ready", function () {
+	$("#new-reviews .rating .star").click(function () {
+		$(this).toggleClass('star-active');
+	});
+});
 		
 						
 //modal
@@ -158,7 +164,14 @@ $(document).on("ready", function () {
     });
 	
 });
-
+$(document).on("ready", function () {
+	$(".navigation-menu .mob-menu").click(function () {
+		$(this).toggleClass('active');
+		$(".navigation-menu > li").removeClass("active");
+		$(this).parent(".navigation-menu > li").addClass("active");
+		$(".navigation-menu > li.active").children(".submenu").slideToggle('normal');
+	});
+});
 
 
 //Минус плюс
