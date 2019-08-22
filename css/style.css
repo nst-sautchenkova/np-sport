@@ -5776,8 +5776,9 @@ form .select-block .select_header span {
 	position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;overflow: hidden;
 	}
+	.navigation-menu{background:#000; }
     .green-bg {
         background: url(../img/green-bg.png) no-repeat center top;
         background-size: cover;
