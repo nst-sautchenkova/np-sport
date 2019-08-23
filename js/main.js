@@ -34,10 +34,17 @@ $(document).scroll(function () {
 
 
 // CATALOG
+/* При нажатии на кнопку
 $(document).on("ready", function () {
 	$(".сard_product .buy-btn").click(function () {
 		$(this).toggleClass('active');
 		$(this).parents('.сard_product').toggleClass('quick');
+	});
+});*/
+
+$(document).on("ready", function () {
+	$(".сard_product").hover(function () {
+		$(this).toggleClass('quick');
 	});
 });
 
