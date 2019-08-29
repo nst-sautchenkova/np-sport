@@ -5799,8 +5799,9 @@ form .select-block .select_header span {
 	display:none;
 }
 @media (max-width: 1140px) {
-.open-menu #main{position: fixed;top: 0;left: 0;width: 100%;overflow: hidden;}
-.form-control {line-height: 100%;}
+	.form-control {
+		line-height: 100%;
+	}
     .green-bg {
         background: url(../img/green-bg.png) no-repeat center top;
         background-size: cover;
@@ -5874,7 +5875,6 @@ form .select-block .select_header span {
         right: 0;
         width: 100vw;
         height: 100vh;
-        position: fixed;
         overflow: auto;
         background: #fff;
         top: -100%;
@@ -6742,9 +6742,7 @@ form .select-block .select_header span {
     .search {
         width: calc(100% - 140px);
     }
-    .open-menu {
-        overflow: hidden;
-    }
+
     #main_slider .swiper-slide:before {
         background: url(../img/slider/bg.png) no-repeat center;
     }
