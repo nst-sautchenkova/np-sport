@@ -103,8 +103,10 @@ $(document).on("ready", function () {
 						
 //modal
 $('.modal-block').on('click', function(){
+	var	idd =  $(this).data("id");
 	var	id =  this.id;
   $(".modal[data-id='#"+id+"']").toggleClass('open');
+  $(".modal[data-id='#"+idd+"']").toggleClass('open');
   $(".modal-ov").show("slow");
   $("body").addClass("open-hidden");
   

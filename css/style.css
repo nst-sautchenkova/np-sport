@@ -1200,7 +1200,7 @@ header .bottom .ico-block a:hover {
 }
 
 .product-filter-item .swiper-wrapper {
-    /* padding: 0 20px; */
+    height:auto
 }
 
 .product-filter-item .swiper-button-prev {
@@ -1566,6 +1566,8 @@ header .bottom .ico-block a:hover {
     background-position-x: 14px;
     padding-left: 42px;
     text-transform: inherit;
+    display: flex;
+    align-items: center;
 }
 
 .сard_product .buy-btn.active,
@@ -1652,9 +1654,13 @@ header .bottom .ico-block a:hover {
     color: #fff;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
     border-bottom: 3px solid #b2b2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.сard_product .quick-order .btn span {}
+.сard_product .quick-order .btn span {
+}
 
 .сard_product {
     -webkit-transition: all 0.2s ease-out;
@@ -2340,6 +2346,7 @@ footer .bottom-row .r-block a {
 }
 
 #catalog_filter .checkbox {
+
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -3396,6 +3403,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 #news_page .left-block .info .txt p {
+
     margin-top: 20px;
     max-height: 36px;
     overflow: hidden;
@@ -3619,6 +3627,7 @@ textarea:focus:-ms-input-placeholder {
 
 #basket-block .param .color {
     width: 18px;
+
     height: 13px;
     display: block;
     background: #f1edfb;

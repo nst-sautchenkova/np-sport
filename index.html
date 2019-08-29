@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>NP sport - Детская спортивная одежда от производителя</title>
@@ -14,10 +14,10 @@
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
   
 </head>
 	<body class="js-loading">
@@ -39,10 +39,10 @@
                                 <div class="logo"><a href="#"><img src="img/logo.png" alt="NP sport" /><span>Детская спортивная одежда <br/>от производителя</span></a></div>
                                                
                                 <div class="language-block">
-                                    <form action="" method="post" id="form-language">
+                                    <form id="form-language">
                                         <div class="btn-group">
                                             <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="hidden-xs hidden-sm hidden-md">RU</span>
-                                                <div class="img-arrow"><img src="img/ico/arrow.png" alt="" /></div>
+                                                <span class="img-arrow"><img src="img/ico/arrow.png" alt="" /></span>
                                             </button>
                                 
                                             <ul class="dropdown-menu">
@@ -78,7 +78,7 @@
                                     <p class="value">Пн.-Пт. с 9:00 до 19:00</p>
                                 </div>
                                 <div class="contacts">
-                                    <a href="tel:(093) 933 93 94" class="phone"><img src="img/ico/phone.png" alt=""/>(093) 933 93 94</a>
+                                    <a href="tel:(093)9339394" class="phone"><img src="img/ico/phone.png" alt=""/>(093) 933 93 94</a>
                                     <div class="btn">Обратный звонок</div>
                                 </div>
                             </div><!-- .row  -->
@@ -248,7 +248,7 @@
                                 	<img src="img/categories/football-bg.png" alt=""/>
                                 </div>
                                 <div class="img-block">
-                                    <img src="img/categories/football-men.png" class="men" />
+                                    <img src="img/categories/football-men.png" class="men" alt="" />
                                 </div>
                                 <div class="tit"><h2>Футбол</h2></div>
                                 <a href="#" class="link"></a>
@@ -258,7 +258,7 @@
                                 	<img src="img/categories/tennis-bg.png" alt=""/>
                                 </div>
                                 <div class="img-block">
-                                    <img src="img/categories/tennis-men.png" class="men"/>
+                                    <img src="img/categories/tennis-men.png" class="men" alt=""/>
                                 </div>
                                 <div class="tit"><h2>Теннис</h2></div>
                                 <a href="#" class="link"></a>
@@ -268,7 +268,7 @@
                                 	<img src="img/categories/badminton-bg.png" alt=""/>
                                 </div>
                                 <div class="img-block">
-                                    <img src="img/categories/badminton-men.png" class="men"/>
+                                    <img src="img/categories/badminton-men.png" class="men" alt=""/>
                                 </div>
                                 <div class="tit"><h2>Бадминтон</h2></div>
                                 <a href="#" class="link"></a>
@@ -278,7 +278,7 @@
                                 	<img src="img/categories/gymnastics-bg.png" alt=""/>
                                 </div>
                                 <div class="img-block">
-                                    <img src="img/categories/gymnastics.png" class="men"/>
+                                    <img src="img/categories/gymnastics.png" class="men" alt=""/>
                                 </div>
                                 <div class="tit"><h2>Гимнастика</h2></div>
                                 <a href="#" class="link"></a>
@@ -328,10 +328,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -363,7 +363,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -380,10 +380,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369"  value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -415,7 +415,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -432,10 +432,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -467,7 +467,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -483,10 +483,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -518,7 +518,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -534,10 +534,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -569,7 +569,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -585,10 +585,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -620,7 +620,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -636,10 +636,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -671,7 +671,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -687,10 +687,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369"  value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -722,7 +722,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -738,10 +738,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -773,7 +773,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -789,10 +789,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -824,7 +824,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -871,10 +871,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -906,7 +906,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -923,10 +923,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -958,7 +958,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -975,10 +975,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600"  value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1010,7 +1010,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1026,10 +1026,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1061,7 +1061,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1077,10 +1077,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1112,7 +1112,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1128,10 +1128,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1163,7 +1163,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1179,10 +1179,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1214,7 +1214,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1230,10 +1230,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369"  value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1265,7 +1265,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1281,10 +1281,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1316,7 +1316,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1332,10 +1332,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1367,7 +1367,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1413,10 +1413,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1448,7 +1448,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1465,10 +1465,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1500,7 +1500,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1517,10 +1517,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1552,7 +1552,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1568,10 +1568,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369"  value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1603,7 +1603,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1619,10 +1619,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1654,7 +1654,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1670,10 +1670,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1705,7 +1705,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1721,10 +1721,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1756,7 +1756,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1772,10 +1772,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1807,7 +1807,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1823,10 +1823,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600"  value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1858,7 +1858,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1874,10 +1874,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1909,7 +1909,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -1955,10 +1955,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -1990,7 +1990,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2007,10 +2007,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2042,7 +2042,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2059,10 +2059,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2094,7 +2094,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2110,10 +2110,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2145,7 +2145,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2161,10 +2161,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value="" /></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2196,7 +2196,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2212,10 +2212,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2247,7 +2247,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2263,10 +2263,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value=""/></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2298,7 +2298,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2314,10 +2314,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2349,7 +2349,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2365,10 +2365,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2400,7 +2400,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
@@ -2416,10 +2416,10 @@
                                                     <div class="color-block">
                                                         <ul>
                                                             <li class="tit">Цвет:</li>
-                                                            <li class="color"><input type="button" style="background:#093"/></li>
-                                                            <li class="color"><input type="button" style="background:#369" /></li>
-                                                            <li class="color"><input type="button" style="background:#F66"/></li>
-                                                            <li class="color active"><input type="button" style="background:#ff3600" /></li>
+                                                            <li class="color"><input type="button" style="background:#093" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#369" value=""/></li>
+                                                            <li class="color"><input type="button" style="background:#F66" value=""/></li>
+                                                            <li class="color active"><input type="button" style="background:#ff3600" value="" /></li>
                                                         </ul>
                                                     </div>
                                                     <div class="ico-block">
@@ -2451,7 +2451,7 @@
                                                 <li><span>150</span></li>
                                                 <li><span class="active">158</span></li>
                                             </ul>
-                                            <div id="prod-1" class="btn modal-block"><span>Быстрый заказ</span></div>
+                                            <div class="btn modal-block" data-id="prod-1"><span>Быстрый заказ</span></div>
                                         </div>
                                 	</div><!-- .сard_product -->
                                 </div><!-- .swiper-slide -->
