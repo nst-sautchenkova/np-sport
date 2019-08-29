@@ -312,7 +312,6 @@ a.btn,
 
 a.btn:hover,
 .btn:hover {
-    background: #6ca336;
 }
 
 .fadeEl {
@@ -1570,8 +1569,7 @@ header .bottom .ico-block a:hover {
     align-items: center;
 }
 
-.сard_product .buy-btn.active,
-.сard_product .buy-btn:hover {
+.сard_product .buy-btn.active{
     background: #ffcc00 url(../img/ico/cart2.png) no-repeat center;
     color: #333333;
     border-bottom: 3px solid #a1935a;
@@ -4045,6 +4043,7 @@ form .item {
     padding-left: 120px;
 }
 
+
 form label {
     width: 120px;
 }
@@ -4899,6 +4898,7 @@ form .select-block .select_header span {
 }
 
 #product-reviews .reviews-block .txt-ov .bottom p {
+
     margin-right: 15px;
     font-family: "GothamProMedium";
     font-size: 11px;
@@ -5402,7 +5402,6 @@ form .select-block .select_header span {
 }
 
 #product_one-specification .btn:hover {
-    opacity: 0.7
 }
 
 #product_one-specification .buy-btn span {
@@ -5735,6 +5734,23 @@ form .select-block .select_header span {
 .row:before, .row:after{
 	display:none;
 }
+@media (min-width: 1260px) {
+	a.btn:hover, .btn:hover {
+		background: #6ca336;
+	}
+	#product_one-specification .btn:hover {
+		opacity: 0.7;
+	}
+	.сard_product .buy-btn:hover {
+		background: #ffcc00 url(../img/ico/cart2.png) no-repeat center;
+		color: #333333;
+		border-bottom: 3px solid #a1935a;
+		line-height: 45px;
+		background-position-x: 14px;
+		padding-left: 42px;
+		text-transform: inherit;
+	}
+}
 @media (max-width: 1750px) {
 
     .container-1700 {
@@ -6029,6 +6045,10 @@ form .select-block .select_header span {
         bottom: 0;
         position: relative;
     }
+	#catalog_list .сard_product.quick .quick-order {
+        bottom: -120px;
+        position: absolute;
+    }
     #main_product {
         margin-bottom: 0;
         padding-bottom: 20px;
@@ -6270,6 +6290,11 @@ form .select-block .select_header span {
 }
 
 @media (max-width: 900px) {
+	#catalog_list .сard_product .buy-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
     #catalog_filter {
         margin-right: 0;
         margin-bottom: 20px;
@@ -6590,6 +6615,7 @@ form .select-block .select_header span {
     }
     #text-page .w-50 {
         width: 100% !important;
+
     }
     #text-page .img {
         margin-bottom: 13px;
