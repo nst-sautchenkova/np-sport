@@ -4899,6 +4899,7 @@ form .select-block .select_header span {
 
 #product-reviews .reviews-block .txt-ov .bottom p {
 
+
     margin-right: 15px;
     font-family: "GothamProMedium";
     font-size: 11px;
@@ -5874,13 +5875,13 @@ form .select-block .select_header span {
         z-index: 99;
         right: 0;
         width: 100vw;
-        height: 100vh;
+        height: auto;
         overflow: auto;
         background: #fff;
         top: -100%;
         background-size: cover;
         border-radius: 0;
-        padding-top: 95px;
+        padding-top: 56px;
         flex-direction: column;
         width: 240px;
     }
@@ -6278,10 +6279,9 @@ form .select-block .select_header span {
 		content:'';
 		display:block;
 		width:240px;
-		height:100px;
+		/* height:100px; */
 		background:#fff;
 		position: fixed;
-
 		top: 0;
 		right: 0;
 		z-index: 2;
