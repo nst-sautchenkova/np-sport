@@ -2347,6 +2347,7 @@ footer .bottom-row .r-block a {
 
 #catalog_filter .checkbox {
 
+
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -7137,6 +7138,7 @@ input:focus, input:active{
     border: 0;
     border-radius: 3px;
     box-shadow: inset 1px 1px 1px rgba(146, 146, 146, 0.7);
+    cursor: pointer;
 }
 .color-block .active{
 	opacity:1;
