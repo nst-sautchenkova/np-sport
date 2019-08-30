@@ -6854,6 +6854,9 @@ header{
 }
 
 @media (max-width: 460px) {
+	.s-w{
+		width:100% !important;
+	}
     header .contacts .phone {
         display: flex;
 		align-items: center;
