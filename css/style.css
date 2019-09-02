@@ -6528,6 +6528,10 @@ header{
 }
 
 @media (max-width: 760px) {
+	.close{
+		top:0;
+		right:20px;
+	}
     #bread-crumbs2 .back {
         margin-bottom: 5px;
     }
