@@ -6583,6 +6583,8 @@ header{
     }
     .history-header .m-tit {
         display: block;
+		margin-right: 10px;
+		font-family: "GothamProBold";
     }
     .personal-history .history-tit {
         display: none;
