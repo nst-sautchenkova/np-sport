@@ -6300,6 +6300,10 @@ header{
 		right: 0;
 		z-index: 2;
 	}
+	.сard_product .quick-order{
+		position:relative !important;
+		bottom:0 !important;
+	}
 	
 }
 
