@@ -204,3 +204,16 @@ $(document).ready(function () {
 		}
 	});
 });
+
+
+
+jQuery(document).ready(function() {
+	var w = jQuery(window).width();
+	if (w <= 900) {
+		$("#catalog_filter .f-header").click(function () {
+			$(this).toggleClass('active');
+			$("#catalog_filter .f-body").slideToggle('normal');
+		});
+	}
+});
+

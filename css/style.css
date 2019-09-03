@@ -4062,10 +4062,12 @@ form .form-control {
     border-radius: 5px;
     width: 100%;
     padding: 0 20px;
-
     font-size: 13px;
     color: #999999;
     font-family: "GothamPro";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 form .select-form {
@@ -5753,14 +5755,7 @@ form .select-block .select_header span {
 		padding-left: 42px;
 		text-transform: inherit;
 	}
-	input[type="checkbox"] + label:hover .check-block {
-		background: #70a239;
-		border-top: 1px solid rgba(178, 178, 178, 0);
-		border-left: 1px solid rgba(178, 178, 178, 0);
-	}
-	input[type="radio"] + label:hover .check-block svg {
-		opacity: 1;
-	}
+	
 }
 @media (max-width: 1750px) {
 
@@ -5849,7 +5844,8 @@ header{
         width: calc(100% - 40px);
     }
     .swiper-slide .сard_product {
-        width: 90%
+        width: 90%;
+		margin: 0 auto;
     }
     header .language-block {
         display: none;
@@ -6862,7 +6858,19 @@ header{
         padding-top: 0;
     }
 }
-
+@media (max-width: 500px) {
+	#main_categories .item {
+        height: 200px !important;
+    }
+    #main_categories .tit h2 {
+        font-size: 16px !important;
+    }
+    #main_categories .item .bg-block img {
+        width: inherit;
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
 @media (max-width: 460px) {
 	.s-w{
 		width:100% !important;
@@ -6896,17 +6904,7 @@ header{
         height: 46px;
         line-height: 50px;
     }
-    #main_categories .item {
-        height: 200px !important;
-    }
-    #main_categories .tit h2 {
-        font-size: 16px !important;
-    }
-    #main_categories .item .bg-block img {
-        width: inherit;
-        min-height: 100%;
-        min-width: 100%;
-    }
+    
     h1 {
         font-size: 23px;
         line-height: 25px;
@@ -6940,7 +6938,7 @@ header{
         justify-content: center;
     }
     .product-categories {
-        display: none;
+        /* display: none; */
     }
     #main_product {
         background: url(../img/green-bg.png) no-repeat top;
@@ -6976,6 +6974,7 @@ header{
         width: 100%;
     }
     #checkout-btn .btn-personal-area {
+
         margin-bottom: 15px;
     }
     #checkout-total .bonus-block .l-block .img {
@@ -7087,6 +7086,11 @@ header{
 	}
 	#publications .publications-header .tit{
 		width:100%;
+	}
+	.product-categories ul{
+		height:auto;
+		top:0;
+		padding:15px 0 0;
 	}
 }
 
