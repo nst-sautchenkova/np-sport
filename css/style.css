@@ -7270,3 +7270,10 @@ select.form-select{
 select:focus{
 	outline:none !important;
 }
+select {
+    word-wrap: normal;
+	transition: none;
+}
+#product_one-specification .new-price {
+    white-space: nowrap;
+}
