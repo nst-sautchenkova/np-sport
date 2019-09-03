@@ -6873,6 +6873,9 @@ header{
 	input{
 		opacity:1 !important
 	}
+	.color-block .color:hover{
+		opacity:1 !important;
+	}
 }
 @media (max-width: 460px) {
 	.s-w{
