@@ -2719,7 +2719,7 @@ input[type="radio"]:checked + label .check-block svg {
     -webkit-flex-direction: row;
     -webkit-flex-direction: row;
     flex-direction: row;
-    -webkit--webkit-justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -6514,7 +6514,7 @@ header {
         display: flex;
         -webkit-align-items: center;
         align-items: center;
-        -webkit--webkit-justify-content: center;
+        -webkit-justify-content: center;
         justify-content: center;
         -webkit-justify-content: center;
         justify-content: center;
