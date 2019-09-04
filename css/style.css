@@ -1042,6 +1042,7 @@ header .bottom .ico-block a:hover {
 }
 
 #main_categories .row {
+
     position: relative;
 }
 
@@ -2659,7 +2660,6 @@ input[type="radio"]:checked + label .check-block svg {
 
 
 /* Modal */
-
 .modal {
     display: none;
     position: fixed;
@@ -3330,6 +3330,7 @@ textarea:focus:-ms-input-placeholder {
     }
     100% {
         opacity: 0;
+
     }
 }
 
@@ -6335,19 +6336,13 @@ header{
 	#main {
 		min-height: 100%;
 		display: -webkit-box; 
-display: -ms-flexbox; 
-display: -webkit-flex; 
-display: flex;  
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
-justify-content: space-between;
--webkit-flex-wrap: wrap;
--moz-flex-wrap: wrap;
--ms-flex-wrap: wrap;
--o-flex-wrap: wrap;
-flex-wrap: wrap;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+		display: -ms-flexbox; 
+		display: -webkit-flex; 
+		display: flex;  
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-flex-direction: column;
+		flex-direction: column;
 	}
 	
 }
