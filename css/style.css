@@ -6334,17 +6334,17 @@ header{
 		bottom:0 !important;
 	}
 	#main {
-    min-height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-	background:#fff;
-}
+		min-height: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		background:#fff;
+	}
 	
 }
 
@@ -6495,7 +6495,12 @@ header{
     }
     #news_page {
         padding-top: 20px;
+		padding-bottom:0;
     }
+	#news_page .right-block .pop-block {
+    background: transparent;
+    padding: 0 20px 30px;
+	}
     #news_page .left-block {
         width: 100%;
         padding: 0;
