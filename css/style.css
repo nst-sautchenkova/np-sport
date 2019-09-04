@@ -6519,8 +6519,15 @@ header {
         -webkit-justify-content: center;
         justify-content: center;
     }
-    #main_slider .info {
+    #main_slider .info, #main_slider .swiper-slide-active .info{
         text-align: center;
+		top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     }
 }
 
