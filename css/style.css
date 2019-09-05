@@ -263,15 +263,13 @@ button {
 .flex {
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -webkit-flex-direction: row;
+	
+    -webkit-flex-direction: row; 
     flex-direction: row;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    align-items: center;
+	
     -webkit-align-items: center;
-    -webkit--webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+	align-items: center;
+    
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
@@ -279,10 +277,11 @@ button {
 .row {
     display: -ms-flexbox;
     display: flex;
+	
     -ms--webkit-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+
     margin: 0 auto;
 }
 
@@ -3773,7 +3772,8 @@ textarea:focus:-ms-input-placeholder {
 #basket-block .kol {
     display: -webkit-flex;
     display: flex;
-    align-items: center;
+     -webkit-align-items: center;
+	align-items: center;
     position: relative;
     margin-right: 45px;
     margin-left: 15px;
@@ -4346,6 +4346,7 @@ form .select-block .select_header span {
     position: relative;
     display: -webkit-flex;
     display: flex;
+	-webkit-align-items: center;
     align-items: center;
 }
 
@@ -4403,6 +4404,7 @@ form .select-block .select_header span {
     width: 100%;
     display: -webkit-flex;
     display: flex;
+	-webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -4720,6 +4722,7 @@ form .select-block .select_header span {
 #text-page .img.w-50 {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -4797,6 +4800,7 @@ form .select-block .select_header span {
 }
 
 #thanks-order .row.top {
+	-webkit-align-items: center;
     align-items: center;
 }
 
@@ -5293,6 +5297,7 @@ form .select-block .select_header span {
 #product_one-slider .swiper-slide {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5304,6 +5309,7 @@ form .select-block .select_header span {
     max-width: 100%;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5339,6 +5345,7 @@ form .select-block .select_header span {
     margin: 10px auto;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5376,6 +5383,7 @@ form .select-block .select_header span {
     left: 0;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5518,6 +5526,7 @@ form .select-block .select_header span {
 #product_one-specification .kol span {
     position: absolute;
     height: 100%;
+    -webkit-align-items: center;
     align-items: center;
     top: 1px;
     display: -webkit-flex;
@@ -5559,6 +5568,7 @@ form .select-block .select_header span {
 #product_one-specification .quick-block form {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -5591,6 +5601,7 @@ form .select-block .select_header span {
 #product_one-specification .info-block .item {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -5602,12 +5613,14 @@ form .select-block .select_header span {
     margin-top: 70px;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 
 #product_one-specification .social-networks a {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     text-decoration: none;
     color: #333;
@@ -5671,6 +5684,7 @@ form .select-block .select_header span {
     position: relative;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     width: 100%;
 }
@@ -5682,6 +5696,7 @@ form .select-block .select_header span {
     height: 100%;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     cursor: pointer;
 }
@@ -5736,6 +5751,7 @@ form .select-block .select_header span {
     border-radius: 5px;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5777,6 +5793,7 @@ form .select-block .select_header span {
     border-radius: 3px;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5798,6 +5815,7 @@ form .select-block .select_header span {
 .m-product_add .modal-body .btn-block {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: space-between;
     justify-content: space-between;
@@ -5806,6 +5824,7 @@ form .select-block .select_header span {
 .m-product_add .modal-body .btn {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     width: 165px;
     -webkit-justify-content: center;
@@ -5827,6 +5846,7 @@ form .select-block .select_header span {
     height: 20px;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5840,6 +5860,7 @@ form .select-block .select_header span {
     width: 100%;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5863,6 +5884,7 @@ form .select-block .select_header span {
     margin-bottom: 30px;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -5887,6 +5909,7 @@ form .select-block .select_header span {
     background: #fff;
     border-bottom: 3px solid #adadab;
     display: inline-flex;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -6202,7 +6225,8 @@ header {
         padding-top: 10px;
     }
     #main_categories .item .bg-block {
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
         width: 100%
     }
     #main_categories .img-block {
@@ -6439,7 +6463,8 @@ header {
         background-size: cover;
     }
     .navigation-menu > li {
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
     }
     .navigation-menu .mob-menu {
         width: 25px;
@@ -6450,7 +6475,8 @@ header {
         height: 25px;
         display: -webkit-flex;
         display: flex;
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
         -webkit-justify-content: center;
         justify-content: center;
         background: #ddd;
@@ -6532,10 +6558,17 @@ header {
 }
 
 @media (max-width: 900px) {
+	.text-block .ul-marker, .text-block .ul-num {
+		width: 100%;
+	}
+	#personal-page:before{
+		width:100%;
+	}
     #catalog_list .сard_product .buy-btn {
         display: -webkit-flex;
         display: flex;
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
         -webkit-justify-content: center;
         justify-content: center;
     }
@@ -6585,7 +6618,8 @@ header {
         background: url(../img/ico/cart.png) no-repeat center left;
         height: 100%;
         display: inline-flex;
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
         -webkit-justify-content: center;
         justify-content: center;
         padding-left: 30px;
@@ -6847,7 +6881,8 @@ header {
         margin-left: 0;
         display: -webkit-flex;
         display: flex;
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
         -webkit-justify-content: center;
         justify-content: center;
         height: 150px
@@ -7138,7 +7173,8 @@ header {
     header .contacts .phone {
         display: -webkit-flex;
         display: flex;
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
     }
     .search input {
         padding: 0 10px;
@@ -7193,7 +7229,8 @@ header {
     .product-filter-item .swiper-slide {
         margin-right: 0 !important;
         display: flex !important;
-        align-items: center;
+        -webkit-align-items: center;
+		align-items: center;
         -webkit-justify-content: center;
         justify-content: center;
     }
@@ -7482,6 +7519,7 @@ input:active {
     height: auto;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
@@ -7508,6 +7546,7 @@ input:active {
     filter: invert(100%);
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -7562,4 +7601,7 @@ select {
 
 #product_one-specification .new-price {
     white-space: nowrap;
+}
+#new-reviews .form .btn-green{
+	text-align:center;
 }
